@@ -6,6 +6,7 @@ import xlrd
 import openpyxl
 
 # zad1
+
 # imiona = pd.ExcelFile('imiona.xlsx')
 # df = pd.read_excel(imiona, header=0)
 # print(df)
@@ -44,4 +45,20 @@ import openpyxl
 # plt.title('Liczba urodzonych chłopców i dziewczynek w latach 2013-2017')
 # plt.legend(labels=df.index, bbox_to_anchor=(1,0.5), loc="center right", bbox_transform=plt.gcf().transFigure)
 # plt.tight_layout()
+# plt.show()
+
+# zad4
+
+# df = pd.read_csv('zamowienia.csv', header=0, sep=';', decimal=',')
+# print(df)
+# df = df.groupby(['Sprzedawca']).agg({"idZamowienia":["count"]})
+# print(df)
+# wykres = df.plot.bar(figsize=(10, 7), zorder=3)
+# wykres.set_xlabel("Sprzedawca", weight='bold')
+# wykres.set_ylabel("Liczba zamówień", weight='bold')
+# wykres.legend()
+# axes = plt.gca()
+# axes.yaxis.grid()
+# plt.title("Liczba złożonych zamówień przez poszczególnych sprzedawców", weight='bold')
+# plt.xticks(rotation=0)
 # plt.show()
