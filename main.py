@@ -32,4 +32,16 @@ import openpyxl
 # plt.yticks(np.arange(0, 4000000, step=500000))
 # plt.show()
 
+# zad3
 
+# imiona = pd.ExcelFile('imiona.xlsx')
+# df = pd.read_excel(imiona, header=0)
+# df = df.groupby(['Rok','Plec']).agg({'Liczba':['sum']})
+# df = df.tail(10)
+# print(df)
+# wykres = df.plot.pie(labels=None, subplots=True, autopct='%.2f %%',
+#                      fontsize=10, figsize=(7, 6), legend=(0, 0))
+# plt.title('Liczba urodzonych chłopców i dziewczynek w latach 2013-2017')
+# plt.legend(labels=df.index, bbox_to_anchor=(1,0.5), loc="center right", bbox_transform=plt.gcf().transFigure)
+# plt.tight_layout()
+# plt.show()
